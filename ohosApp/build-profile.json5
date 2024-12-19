@@ -1,0 +1,55 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/kylewong/.ohos/config/default_KotlinBenchmark4Ohos_8ncv7_sM9lbh_xpvRGPYeYPawowcgZiexNYoqqPV9gA=.cer",
+          "storePassword": "0000001AD089217628A3C1E60631FCE8D23291C3C41E0DC96DF5142F4B6552C5233324AB4C53205A342A",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001A359AEFD62A21EDE5ACEB2D81B7FF3202F705F8E1EB0F41C5C9B1A6675FE44CDF98CBC7A33539",
+          "profile": "/Users/kylewong/.ohos/config/default_KotlinBenchmark4Ohos_8ncv7_sM9lbh_xpvRGPYeYPawowcgZiexNYoqqPV9gA=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/kylewong/.ohos/config/default_KotlinBenchmark4Ohos_8ncv7_sM9lbh_xpvRGPYeYPawowcgZiexNYoqqPV9gA=.p12"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
